@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="sci-fi.css">
+  <title>Sci-Fi Movie Feedback Form</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Sci-Fi Movie Feedback</h2>
+    <form>
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" placeholder="NAME" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="">Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <label for="age">Your Age</label>
+      <input type="number" id="age" name="age" min="10" max="100" required>
+
+      <label for="frequency">How often do you watch sci-fi movies?</label>
+      <select id="frequency" name="frequency">
+        <option value="">Choose one</option>
+        <option value="daily">Every day</option>
+        <option value="weekly">A few times a week</option>
+        <option value="monthly">A few times a month</option>
+        <option value="rarely">Occasionally</option>
+      </select>
+
+      <label for="favorite">Favorite Sci-Fi Movie</label>
+      <input type="text" id="favorite" name="favorite" placeholder="e.g., Interstellar">
+
+      <label for="genres">Favorite Sci-Fi Sub-genres</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="genres" value="space"> Space/Interstellar</label>
+        <label><input type="checkbox" name="genres" value="cyberpunk"> Cyberpunk</label>
+        <label><input type="checkbox" name="genres" value="ai"> Artificial Intelligence</label>
+        <label><input type="checkbox" name="genres" value="time"> Time Travel</label>
+        <label><input type="checkbox" name="genres" value="dystopian"> Dystopian</label>
+        <label><input type="checkbox" name="genres" value="alien"> Alien Invasion</label>
+        <label><input type="checkbox" name="genres" value="other"> Other</label>
+      </div>
+
+      <label for="rating">How much do you enjoy sci-fi movies?</label>
+      <select id="rating" name="rating">
+        <option value="love">Love them</option>
+        <option value="like">Like them</option>
+        <option value="neutral">They're okay</option>
+        <option value="dislike">Not really into them</option>
+      </select>
+
+      <label for="thoughts">What do you like most about sci-fi movies?</label>
+      <textarea id="thoughts" name="thoughts" placeholder="Your thoughts..."></textarea>
+
+      <label for="improvements">Anything you'd like to see more of in sci-fi films?</label>
+      <textarea id="improvements" name="improvements" placeholder="More female leads, better storytelling, realistic science, etc."></textarea>
+
+      <label for="recommendations">Any sci-fi movies you'd recommend?</label>
+      <textarea id="recommendations" name="recommendations" placeholder="Share your top picks..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>
